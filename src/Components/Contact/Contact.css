@@ -1,0 +1,149 @@
+.container-ct {
+  text-align: center;
+  border-radius: 80px 80px 0px 0px;
+  background: var(--ct-color);
+  box-shadow: 0px 4.983840465545654px 99.67680358886719px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(49.838401794433594px);
+}
+
+.container-ct > h1 {
+  color: #fff;
+  font-family: source;
+  font-size: 60px;
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.formContact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formContact > .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.formContact > .left > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.formContact > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+  height: 368px;
+  border-radius: 15px;
+  background: #4e8ad2;
+  padding: 20px;
+  gap: 20px;
+}
+
+.formContact > .right > input {
+  width: 100%;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #101630;
+  border: none;
+  color: #fff;
+  padding-left: 15px;
+  font-family: salsa;
+  font-size: 15px;
+}
+
+.formContact > .right > textarea {
+  width: 100%;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #101630;
+  color: #fff;
+  padding: 15px 0 0 15px;
+  border: none;
+  font-family: salsa;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.formContact > .right > button {
+  padding: 18px 60px;
+  border-radius: 15px;
+  background: #101630;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: salsa;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.formContact > .right > button:hover{
+  transform: scale(0.9);
+}
+.formContact > .right > button:active{
+  transform: scale(1.1);
+}
+
+/* //////////FOOTER */
+
+#footer {
+  width: 100%;
+  margin: 50px 0 10px 0;
+  position: relative;
+
+}
+
+#footer > .itemCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#footer>.line {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.itemCard>.linkCard{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.itemCard>.linkCard>a{
+  transition: all .3s ease;
+}
+
+.itemCard>.linkCard>a:hover{
+  transform: scale(0.9);
+}
+.itemCard>.linkCard>a:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,187 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  margin-bottom: 60px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.bg-light {
+  background: #fff;
+}
+
+.bg-dark {
+  background: #090e26;
+}
+
+.link-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-items > a {
+  color: var(--tittle-color);
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-left: 40px;
+  user-select: none;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #399ee1;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+.backHome {
+  padding: 15px 25px;
+  border: none;
+  background: none;
+  color: #fff;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #53a8da 0%, #4425ba 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: Ultra;
+  cursor: pointer;
+}
+
+.backHome:hover {
+  transform: scale(1.1);
+}
+
+.backHome:active {
+  transform: scale(0.9);
+}
+
+.burger {
+  display: none;
+}
+
+.burger > input {
+  display: none;
+}
+
+.icon-menu {
+  --gap: 5px;
+  --height-bar: 4px;
+  --width-bar: 40px;
+  --pos-y-bar-one: 0;
+  --pos-y-bar-three: 0;
+  --rotate-bar-one: 0;
+  --rotate-bar-three: 0;
+  width: var(--width-bar);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  cursor: pointer;
+  position: relative;
+}
+
+.bar {
+  position: relative;
+  height: var(--height-bar);
+  width: 100%;
+  border-radius: 0.6rem;
+  background-color: #9941fc;
+}
+
+.bar--1 {
+  top: var(--pos-y-bar-one);
+  transform: rotate(var(--rotate-bar-one));
+  transition: top 200ms 100ms, transform 100ms;
+}
+
+.bar--2 {
+  transform: scaleX(var(--scale-bar));
+  transition: transform 150ms 100ms;
+}
+
+.bar--3 {
+  bottom: var(--pos-y-bar-three);
+  transform: rotate(var(--rotate-bar-three));
+  transition: bottom 200ms 100ms, transform 100ms;
+}
+
+.check-icon:checked + .icon-menu > .bar--1 {
+  transition: top 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked + .icon-menu > .bar--3 {
+  transition: bottom 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked + .icon-menu {
+  --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+  --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+  --scale-bar: 0;
+  --rotate-bar-one: 45deg;
+  --rotate-bar-three: -45deg;
+}
+
+@media (max-width: 1000px) {
+  .link-items {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}

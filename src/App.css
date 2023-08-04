@@ -1,0 +1,101 @@
+:root {
+  --bg-color: #fff;
+  --tittle-color: #000;
+  --text-color: #555;
+  --ct-color: #062056;
+}
+
+.dark {
+  --bg-color: #090e26;
+  --tittle-color: #fff;
+  --text-color: #4a4c77;
+  --ct-color:rgba(0, 71, 255, 0.21)
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: Ultra;
+  src: url(./Assets/Fonts/Ultra-Regular.ttf);
+}
+
+@font-face {
+  font-family: source;
+  src: url(./Assets/Fonts/SourceSans3-Regular.ttf);
+}
+
+@font-face {
+  font-family: sansita;
+  src: url(./Assets/Fonts/Sansita-Italic.ttf);
+}
+@font-face {
+  font-family: salsa;
+  src: url(./Assets/Fonts/Salsa-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  position: relative;
+}
+
+#root {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 100px;
+}
+
+.btn {
+  padding: 15px 60px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #53a8da 0%, #4425ba 100%);
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: Ultra;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.tittle {
+  color: var(--tittle-color);
+  font-size: 50px;
+  font-family: Sansita;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 100px;
+}
