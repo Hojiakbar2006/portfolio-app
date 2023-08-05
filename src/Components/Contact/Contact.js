@@ -44,9 +44,9 @@ export default function Contact() {
   ];
 
   return (
-    <div className="container container-ct">
+    <div id="contact" name="Contact">
       <h1>Contact</h1>
-      <div id="contact">
+      <div className="contact-card">
         <div className="formContact">
           <div className="left">
             {ctDate.map((item, i) => {
@@ -82,7 +82,7 @@ export default function Contact() {
             <div className="linkCard">
               {linkDate.map((item, i) => {
                 return (
-                  <a target="blank" href={item.link}>
+                  <a key={i} target="blank" href={item.link}>
                     <img src={item.img} alt="" />
                   </a>
                 );

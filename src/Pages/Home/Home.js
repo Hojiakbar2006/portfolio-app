@@ -11,8 +11,8 @@ export default function Home() {
    <>
    <Header/>
    <About/>
-   <Portfolio/>
    <Skils/>
+   <Portfolio/>
    <Colleagues/>
    <Contact/>
    </>

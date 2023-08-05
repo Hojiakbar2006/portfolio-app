@@ -14,7 +14,9 @@ export default function NavBar() {
     document.body.classList.remove("dark");
   }
 
-  // console.log(dark);
+  window.addEventListener("scroll", ()=>{
+    
+  })
 
   const location = useLocation().pathname;
 
@@ -34,6 +36,7 @@ export default function NavBar() {
           <a href="#about">About me</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#skils">Professions</a>
+          <a href="#team">Team</a>
           <a href="#contact">Contact</a>
 
           <label className="switch">
@@ -49,7 +52,7 @@ export default function NavBar() {
       {location === "/project" ? (
         ""
       ) : (
-        <label className="burger">
+        <label className="burger" htmlFor="case">
           <input className="check-icon" id="check-icon" type="checkbox" />
           <label className="icon-menu" for="check-icon">
             <div className="bar bar--1"></div>

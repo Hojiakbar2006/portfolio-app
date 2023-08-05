@@ -53,8 +53,8 @@ export default function Colleagues() {
 
   return (
     <div className="container">
-      <section id="colleagues">
-        <h1>My Colleagues</h1>
+      <section id="team">
+        <h1 className="tittle">My Colleagues</h1>
         <Slider {...settings}>
           <div className="profile-card">
             <div className="img-card">

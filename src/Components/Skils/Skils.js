@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 export default function Skils() {
   const data = useSelector((state) => state.skils);
   return (
-    <div className="container">
+    <div className="container" name="Skils">
       <section id="skils">
         <p className="tittle">My Skils</p>
         <div className="progresCard">

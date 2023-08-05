@@ -1,18 +1,21 @@
-.container-ct {
+#contact {
+  width: 100%;
+  padding: 30px 100px;
   text-align: center;
-  border-radius: 80px 80px 0px 0px;
+  border-radius: 70px 70px 0px 0px;
+  border-top: #fff solid 2px;
   background: var(--ct-color);
   box-shadow: 0px 4.983840465545654px 99.67680358886719px 0px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(49.838401794433594px);
 }
 
-.container-ct > h1 {
+#contact > h1 {
   color: #fff;
   font-family: source;
   font-size: 60px;
 }
 
-#contact {
+.contact-card {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,13 +26,14 @@
 
 .formContact {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .formContact > .left {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +50,7 @@
 }
 
 .formContact > .right {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -97,12 +102,12 @@
   font-size: 15px;
   font-family: salsa;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.formContact > .right > button:hover{
+.formContact > .right > button:hover {
   transform: scale(0.9);
 }
-.formContact > .right > button:active{
+.formContact > .right > button:active {
   transform: scale(1.1);
 }
 
@@ -112,7 +117,6 @@
   width: 100%;
   margin: 50px 0 10px 0;
   position: relative;
-
 }
 
 #footer > .itemCard {
@@ -120,10 +124,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
-#footer>.line {
+#footer > .line {
   width: 100%;
   height: 2px;
   background: #fff;
@@ -132,18 +136,18 @@
   left: 0;
 }
 
-.itemCard>.linkCard{
+.itemCard > .linkCard {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-.itemCard>.linkCard>a{
-  transition: all .3s ease;
+.itemCard > .linkCard > a {
+  transition: all 0.3s ease;
 }
 
-.itemCard>.linkCard>a:hover{
+.itemCard > .linkCard > a:hover {
   transform: scale(0.9);
 }
-.itemCard>.linkCard>a:hover{
+.itemCard > .linkCard > a:hover {
   transform: scale(1.1);
 }

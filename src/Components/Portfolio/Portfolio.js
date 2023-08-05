@@ -11,7 +11,7 @@ import DisLike from "../../Assets/Imgs/Dislike.svg";
 export default function Portfolio() {
   const navigate = useNavigate()
   return (
-    <div className="container">
+    <div className="container" name="Portfolio">
       <section id="portfolio">
         <h1 className="tittle">Portfolio</h1>
         <div className="projectDiv">

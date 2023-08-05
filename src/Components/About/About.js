@@ -5,7 +5,7 @@ import about from "../../Assets/Imgs/about.svg";
 export default function About() {
   return (
     <div className="container">
-      <section id="about">
+      <section id="about" name = "About">
         <div className="left">
           <img src={about} alt="" />
         </div>

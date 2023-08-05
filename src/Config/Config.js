@@ -7,7 +7,6 @@ export default function Config() {
 
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme))
-    console.log(theme);
   }, [theme]);
 
   return null

@@ -6,7 +6,7 @@ export function Clock() {
 
   const Clock = () => {
     let day = new Date();
-    let hh = day.getHours() < 10 ? `0${day.getSeconds()}` : day.getHours();
+    let hh = day.getHours() < 10 ? `0${day.getHours()}` : day.getHours();
     let mm = day.getMinutes() < 10 ? `0${day.getSeconds()}` : day.getMinutes();
     let ss = day.getSeconds() < 10 ? `0${day.getSeconds()}` : day.getSeconds();
     setClock(`${hh}:${mm}:${ss}`);
